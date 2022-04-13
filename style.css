@@ -1,0 +1,57 @@
+:root {
+  --dark: #0A1833;
+  --light-blue: #CDEAF0;
+  --tan: #F8F0E5;
+}
+
+header,
+footer {
+  background-color: var(--dark);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem;
+}
+
+
+.shopkeeper {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background-image: url(assets/img/hero-image.jpg);
+  padding: 3rem;
+
+}
+
+.shopkeeper img{
+transform: scaleX(-1);
+}
+
+.shopkeeper-text {
+  background-color: var(--tan);
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.products {
+  background-color: var(--light-blue);
+  padding: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: var(--tan);
+  margin: .75rem;
+  padding: .75rem;
+  text-align: center;
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+  filter: drop-shadow(1px 1px 2px #0A1833);
+}
+
+.product-card h4{
+  border-bottom: 1px solid var(--dark);
+}
