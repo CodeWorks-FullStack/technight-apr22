@@ -9,44 +9,37 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-  <!-- anything you want the user to see goes here -->
-
   <header>
     <div class="left">
       <img src="https://thiscatdoesnotexist.com" alt="" height="65">
       <span>Wizbangs worldly wonders</span>
     </div>
     <div class="right">
-      <button data-bs-toggle="offcanvas" data-bs-target="#cart" class="btn btn-outline-light" >👜</button>
+      <button data-bs-toggle="offcanvas" data-bs-target="#cart" class="btn btn-outline-light">👜</button>
     </div>
   </header>
-
   <main>
     <section class="shopkeeper">
       <div class="shopkeeper-image">
         <img src="assets/img/wizbang.png" alt="" height="350">
       </div>
       <div class="shopkeeper-text">
-        <h1>Wizbang the wonderful</h1>
-
+        <h1><span id="shopkeeper-name">SHOPKEEPER</span> the wonderful</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum saepe voluptatum cupiditate, adipisci
           dolorem!</p>
-
         <ul>
           <li>item 1</li>
           <li>item 2</li>
           <li>item 4</li>
           <li>item 5</li>
         </ul>
-
       </div>
     </section>
-    <section class="products">
-      <div class="product-card">
+    <section class="products" id="products">
+      <!-- <div class="product-card">
         <img src="assets/img/bag.png" alt="" height="200">
         <h4>Big`o Bag</h4>
         <p>I bet you can put lots of things in here.</p>
@@ -85,29 +78,25 @@
         <img src="assets/img/boots.png" alt="" height="200">
         <h4>BOots of Walking</h4>
         <p>Thats just what they'll do.</p>
-      </div>
+      </div> -->
     </section>
   </main>
-
   <footer>
     <p>Made with ☄️ 🧙‍♂️</p>
   </footer>
-
-
   <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="cartLabel">
     <div class="offcanvas-header">
       <h5 id="cartLabel">Your 👜</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <!-- ...TODO MARK PUT THE CART ITEMS HERE -->
+    <div class="offcanvas-body" id="cart-body">
     </div>
+    <button class="btn btn-success" onclick="emptyCart()">Checkout</button>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
+  <script src="main.js"></script>
 </body>
 
 </html>
